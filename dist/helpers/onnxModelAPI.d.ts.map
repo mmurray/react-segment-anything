@@ -1,0 +1,1 @@
+{"version":3,"file":"onnxModelAPI.d.ts","sourceRoot":"","sources":["../../src/helpers/onnxModelAPI.tsx"],"names":[],"mappings":"AAMA,OAAO,EAAE,MAAM,EAAE,MAAM,iBAAiB,CAAC;AACzC,OAAO,EAAE,SAAS,EAAE,MAAM,cAAc,CAAC;AAEzC,QAAA,MAAM,SAAS,4CAA6C,SAAS;;;;;;;aAmEpE,CAAC;AAEF,OAAO,EAAE,SAAS,EAAE,CAAC"}

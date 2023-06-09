@@ -1,0 +1,62 @@
+{
+  "name": "react-segment-anything-example",
+  "homepage": ".",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node node_modules/react-scripts/bin/react-scripts.js eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "file:../node_modules/@mui/icons-material",
+    "@mui/material": "file:../node_modules/@mui/material",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "file:../node_modules/@types/node",
+    "@types/react": "file:../node_modules/@types/react",
+    "@types/react-dom": "file:../node_modules/@types/react-dom",
+    "@types/resize-observer-browser": "^0.1.7",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "array-move": "^4.0.0",
+    "konva": "file:../node_modules/konva",
+    "npyjs": "^0.4.0",
+    "onnxruntime-web": "1.14.0",
+    "postcss-preset-env": "^8.4.2",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "react-konva": "file:../node_modules/react-konva",
+    "react-scripts": "5.0.1",
+    "react-segment-anything": "file:..",
+    "typescript": "^5.1.3",
+    "underscore": "^1.13.6",
+    "use-image": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
