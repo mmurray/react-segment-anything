@@ -29,7 +29,7 @@ import { InferenceSession } from "onnxruntime-web";
 /* @ts-ignore */
 import * as _ from "underscore";
 
-export const SegmentAnything = ({image, embedding, modelUrl}: SegmentAnythingProps) => {
+export const SegmentAnything = ({image, embedding, modelUrl, handleMaskSaved}: SegmentAnythingProps) => {
     // ONNX model
     const [model, setModel] = React.useState<InferenceSession | null>(null); 
 
@@ -152,7 +152,7 @@ export const SegmentAnything = ({image, embedding, modelUrl}: SegmentAnythingPro
                                     </Stack>
                                 </CardContent>
                             </Card>
-                            <Button sx={{mt: 2}} className='react-sam-toolbar-save' startIcon={<CheckIcon />} size="large" color="success" variant="contained">Save Mask</Button>
+                            <Button disabled={!maskImage} onClick={() => handleMaskSaved(maskImage!, image)} sx={{mt: 2}} className='react-sam-toolbar-save' startIcon={<CheckIcon />} size="large" color="success" variant="contained">Save Mask</Button>
                         </Stack>
                     </Grid>
                     <Grid item xs={9}>
