@@ -107,7 +107,7 @@ export const SegmentAnything = ({image, embedding, modelUrl, handleMaskSaved, in
     // Run the ONNX model every time clicks or bbox have changed
     useEffect(() => {
         runONNX();
-    }, [clicks]);
+    }, [clicks, model]);
 
     useEffect(() => {
         throttledRunONNX();
