@@ -29,7 +29,7 @@ import { InferenceSession } from "onnxruntime-web";
 /* @ts-ignore */
 import * as _ from "underscore";
 
-export const SegmentAnything = ({image, embedding, modelUrl, handleMaskSaved}: SegmentAnythingProps) => {
+export const SegmentAnything = ({image, embedding, modelUrl, handleMaskSaved, initialClicks, initialBBox}: SegmentAnythingProps) => {
     // ONNX model
     const [model, setModel] = React.useState<InferenceSession | null>(null); 
 
@@ -37,8 +37,8 @@ export const SegmentAnything = ({image, embedding, modelUrl, handleMaskSaved}: S
     const [mode, setMode] = React.useState<ToolMode>(ToolMode.Default); // Tool mode
 
     // Model parameters (clicks and bounding box)
-    const [clicks, setClicks] = React.useState<Click[]>([]);
-    const [bbox, setBbox] = React.useState<BoundingBox | undefined>(undefined);
+    const [clicks, setClicks] = React.useState<Click[]>(initialClicks ? initialClicks : []);
+    const [bbox, setBbox] = React.useState<BoundingBox | undefined>(initialBBox);
 
     // Mask image
     const [maskImage, setMaskImage] = React.useState<HTMLImageElement | undefined>(undefined);

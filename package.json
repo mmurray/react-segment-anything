@@ -1,6 +1,6 @@
 {
   "name": "react-segment-anything",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React based web interface for the Segment Anything Model (SAM)",
   "main": "dist/index.min.js",
   "module": "dist/index.es.js",

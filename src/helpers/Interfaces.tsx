@@ -29,6 +29,8 @@ export interface SegmentAnythingProps {
   image: HTMLImageElement;
   embedding: Tensor;
   modelUrl: string;
+  initialClicks?: Array<Click>;
+  initialBBox?: BoundingBox;
 }
 
 export enum ToolMode {
