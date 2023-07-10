@@ -111,6 +111,7 @@ const Tool = ({
   return (
     <div className="react-sam-tool" ref={containerRef}>
       <Stage width={width} height={height} style={{cursor: targetSelectEnabled ? 'crossHair' : 'default'}}>
+        {width > 0 && height > 0 ? (
           <Layer
             onMouseDown={(e) => onMouseDown(e)}
             onTouchStart={(e) => onMouseDown(e)}
@@ -139,6 +140,7 @@ const Tool = ({
                   y={click.y * containerRatio} />
               ))}
           </Layer>
+        ) : null}
       </Stage>
 
       {/* {clicks.map((click, index) => <li>{click.x},{click.y},{click.pointType}</li>)} */}
